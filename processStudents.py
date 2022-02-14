@@ -51,8 +51,8 @@ for record in students:
 
     # append the record to the dictionary with the student id as the Key
     # and the value as the GPA
-#student_dict(record[0] +','+ record[1] +','+ record[2] +','+ record[3]+','+ record[4]+','+ record[5] +','+ record[6]+','+ record[7]+','+ record[8]+'\n')
-student_dict[record[0]] = record[8]
+student_dict = (record[0] +','+ record[1] +','+ record[2] +','+ record[3]+','+ record[4]+','+ record[5] +','+ record[6]+','+ record[7]+','+ record[8]+'\n')
+
 
 
 
@@ -62,8 +62,9 @@ student_dict[record[0]] = record[8]
 #print the entire dictionary
 print(student_dict)
 #Print the student id 
-print(record[0])
-
+num = '567890123'
+for num in student_dict:
+    print(int(student_dict[num]))
 #print out the corresponding GPA from the dictionary
 print(student_dict(record[8]))
 
